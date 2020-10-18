@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void DisplayArray(int arr[],int len)
+{
+    for(int i=0;i<len;i++)
+    {
+        printf("%d",arr[i]);
+    }
+    printf("\n");
+}
+int main()
+{
+    int arr[50],len;
+    printf("Enter the number of elements in the array:");
+    scanf("%d",&len);
+    for(int i=0;i<len;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("Display the entered array:");
+    DisplayArray(arr,len);
+    return 0;
+}
+
